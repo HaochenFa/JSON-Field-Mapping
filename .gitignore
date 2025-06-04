@@ -51,3 +51,6 @@ dist-ssr
 .cache
 .temp
 .tmp
+
+# Others
+explain.md*
