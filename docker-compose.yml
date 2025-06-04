@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: haochen-fa/json-field-mapping:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    # 如果需要环境变量，可以在这里添加
+    # environment:
+    #   - APP_API_URL=https://api.example.com
